@@ -83,6 +83,22 @@
       margin:20px 0;
     }
 
+    .page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    }
+
+    .container {
+      background: white;
+      padding: 40px;
+      width: 380px;
+      border-radius: 16px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    }
+
     .form{
       width:300px;
       margin:auto;
@@ -93,6 +109,28 @@
 
     .form input{
       padding:10px;
+    }
+
+    .form button {
+      padding: 14px;
+      background: #007bff;
+      border: none;
+      color: white;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .form button:hover {
+      background: #0056b3;
+      transform: translateY(2px);
+    }
+
+    .subtitle {
+      text-align: center;
+      color: gray;
+      margin: 15px;
     }
 
     .gallery{
