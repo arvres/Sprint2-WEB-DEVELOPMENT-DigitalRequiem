@@ -12,10 +12,16 @@
       align-items: center;
       background: #f0f2f5;
     }
-    
-    .texto{
-        padding: 50px;
+
+    .index {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #f0f2f5;
     }
+    
     .login {
       background: white;
       padding: 30px;
@@ -68,8 +74,9 @@
     }
 
     .slideshow img{
-      width:700px;
+      width:400px;
       max-width:100%;
+      padding: 10px;
       height:400px;
       object-fit:cover;
       border-radius:10px;
