@@ -1,3 +1,9 @@
+const nome = localStorage.getItem("nomeUsuario")
+
+if (nome) {
+    alert(`Bem-vindo(a), ${nome}!`)
+}
+
 const addMediaBtn = document.getElementById("addMedia")
 const gallery = document.getElementById("gallery")
 
@@ -17,7 +23,7 @@ addMediaBtn.addEventListener("click", () => {
     }
 
     criarCard(titulo, url)
-});
+})
 
 function criarCard(titulo, url) {
     const card = document.createElement("div")

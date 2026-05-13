@@ -1,6 +1,6 @@
 const form = document.getElementById("loginForm");
 
-form.addEventListener("submit", () => {
+form.addEventListener("submit", (event) => {
     event.preventDefault() // garante que o 'sumbit' seja validado 
 
     const email = document.getElementById("email").value.trim()
@@ -12,7 +12,7 @@ form.addEventListener("submit", () => {
         return
     }
 
-    if (length(senha) < 8) {
+    if (senha.length < 8) {
         alert("Digite uma senha mais segura")
         return
     }

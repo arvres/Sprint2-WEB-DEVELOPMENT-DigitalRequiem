@@ -1,6 +1,6 @@
 
 const botao = document.getElementById('botao')
-botao.addEventListener('click', () => {
+botao.addEventListener('click', (event) => {
     event.preventDefault() // garante que o 'sumbit' seja validado 
     const nome = document.getElementById('nome').value.trim()
     if (nome === "") {
